@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuardianApp">
+
+    <TextView
+        android:id="@+id/tvgd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Guardian Details"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tvgd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Guardian Details Ist"
+        app:layout_constraintTop_toBottomOf="@id/tvgd"/>
+    <EditText
+        android:id="@+id/etpe1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="textEmailAddress"
+        android:hint="enter your parent email"
+        app:layout_constraintTop_toBottomOf="@id/tvgd1"/>
+    <EditText
+        android:id="@+id/etpn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="number"
+        android:hint="enter your parent phone number"
+        app:layout_constraintTop_toBottomOf="@id/etpe1"/>
+    <TextView
+        android:id="@+id/tvgd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Guardian Details IInd"
+        app:layout_constraintTop_toBottomOf="@id/etpn1"/>
+    <EditText
+        android:id="@+id/etpe2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="enter your parent email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/tvgd2"/>
+    <EditText
+        android:id="@+id/etpn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="number"
+        android:hint="enter your parent phone number"
+        app:layout_constraintTop_toBottomOf="@id/etpe2"/>
+    <TextView
+        android:id="@+id/tvgd3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="Guardian Details IIIrd"
+        app:layout_constraintTop_toBottomOf="@id/etpn2"/>
+    <EditText
+        android:id="@+id/etpe3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="enter your parent email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/tvgd3"/>
+    <EditText
+        android:id="@+id/etpn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:inputType="number"
+        android:hint="enter your parent phone number"
+        app:layout_constraintTop_toBottomOf="@id/etpe3"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:onClick="save"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpn3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
